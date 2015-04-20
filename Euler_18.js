@@ -36,7 +36,7 @@ var triangle = "75;95 64;17 47 82;18 35 87 10;20 04 82 47 65;19 01 23 75 03 34;8
 function findSum(){
   var result = 0;
 
-  var rows = triangle2.split(";");
+  var rows = triangle.split(";");
   var index = 0;
   for(var i = 0; i < rows.length; i++){
     var choices = rows[i].split(" ");
