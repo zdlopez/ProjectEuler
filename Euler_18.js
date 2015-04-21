@@ -38,12 +38,16 @@ function findSum(){
 
   var rows = triangle.split(";");
   var index = 0;
-  for(var i = 0; i < rows.length; i++){
+  var results = rows[rows.length].split(" ");
+  for(var i = rows.length - 1; i >= 0; i--){
     var choices = rows[i].split(" ");
+    var newResults  = [];
     index = findMax(choices, index);
     result += parseInt(choices[index]);
   }
   return result;
+
+  //function helper()
 }
 
 function findMax(choices, index){
